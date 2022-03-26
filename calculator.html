@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Удобный онлайн калькулятор</title>
+    <meta http-equiv="Content-type" content="text/html" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="ind.css">
+</head>
+
+<body>
+    <section class='openBlock' id='starBlock'>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZkARFqSYVK1upmgVps8jhVV98veNknYl8Q&usqp=CAU" height='50px'width='50px' class='star'>
+    </section>
+    <ul class='exert'>
+
+    </ul>
+    <section class='calculator' id='calc'>
+        <form action='' name='form'>
+            <input type='text' id='inp' name='text'>
+        </form>
+        <div class='buttons'>
+            <button class='big' id='clean' onclick='func2()'>AC</button>
+            <button class='small' onclick="method('()')">()</button>
+            <button class='small' onclick='cleanSheet()'>&larr;</button>
+            <button class='small' onclick="method('*')">&times;</button>
+            <br>
+            <button class='nums' onclick="method('7')">7</button>
+            <button class='nums' onclick="method('8')">8</button>
+            <button class='nums' onclick="method('9')">9</button>
+            <button class='small margin' onclick="method('/')">&divide;</button>
+            <br>
+            <button class='nums' onclick="method('4')">4</button>
+            <button class='nums' onclick="method('5')">5</button>
+            <button class='nums' onclick="method('6')">6</button>
+            <button class='small margin' onclick="method('-')">-</button>
+            <br>
+            <button class='nums' onclick="method('1')">1</button>
+            <button class='nums' onclick="method('2')">2</button>
+            <button class='nums' onclick="method('3')">3</button>
+            <button class='small margin' onclick="method('+')">+</button>
+            <br>
+            <button class='nums large' onclick="method('0')">0</button>
+            <button class='nums' id='dot' onclick="method('.')">.</button>
+            <button class='small margin' id='equal' onclick="total('=')">=</button>
+        </div>
+    </section>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
